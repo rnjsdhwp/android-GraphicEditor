@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+//상단버튼
+    <LinearLayout
+        android:id="@+id/ButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFigure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="도형"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="도구"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="색깔"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="필터없음"
+            android:textSize="20dp" />
+    </LinearLayout>
+//화면
+
+    <LinearLayout
+        android:id="@+id/pictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+    </LinearLayout>
+//하단버튼
+    <LinearLayout
+        android:id="@+id/iconLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#EEEEEE"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibZoomin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_zoomin" />
+
+        <ImageButton
+            android:id="@+id/ibZoomout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_zoomout" />
+
+        <ImageButton
+            android:id="@+id/ibUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_undo" />
+
+        <ImageButton
+            android:id="@+id/ibRedo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_redo" />
+
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/icon_delete" />
+
+    </LinearLayout>
+</LinearLayout>
